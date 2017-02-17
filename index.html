@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script> 
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script>
+<script language="javascript">
+
+$(document).ready(function()
+{
+
+$("#home_slogan_button1").click(function(){
+$( "#home_slogan_list2" ).hide();
+$( "#home_slogan_list3" ).hide();
+$(".col-sm-3").css("width","25%");
+$("#home_slogan_list1").fadeIn();
+ $( "#arrow-up" ).animate({
+ left:"45%"},300);
+});
+
+$("#home_slogan_button2").click(function(){
+$( "#home_slogan_list1" ).hide();
+$( "#home_slogan_list3" ).hide();
+$(".col-sm-3").css("width","20%");
+$("#home_slogan_list2").fadeIn();
+$( "#arrow-up" ).animate({
+ left:"145%"},300);
+});
+
+$("#home_slogan_button3").click(function(){
+$( "#home_slogan_list1" ).hide();
+$( "#home_slogan_list2" ).hide();
+$(".col-sm-3").css("width","25%");
+$("#home_slogan_list3").fadeIn();
+$( "#arrow-up" ).animate({
+ left:"245%"},300);
+});
+
+
+
+});
+</script> 
+<!-- <script language="javascript">
+$(document).ready(function()
+{
+      $(".home_button1").click(function(){
+  $( "div.home_content1" ).fadeOut(150);
+  $( "div.home_content2" ).fadeOut(150);
+  $( "div.home_content3" ).fadeOut(150);
+  $( "div.home_content4" ).fadeOut(150);
+  $( "div.home_content5" ).fadeOut(150);
+  $("div.home_content1").fadeIn();
+      });
+	  
+	$(".home_button2").click(function(){
+  $( "div.home_content1" ).fadeOut(150);
+  $( "div.home_content2" ).fadeOut(150);
+  $( "div.home_content3" ).fadeOut(150);
+  $( "div.home_content4" ).fadeOut(150);
+  $( "div.home_content5" ).fadeOut(150);
+  $("div.home_content2").fadeIn();
+      });
+	  
+	  	$(".home_button3").click(function(){
+  $( "div.home_content1" ).fadeOut(150);
+  $( "div.home_content2" ).fadeOut(150);
+  $( "div.home_content3" ).fadeOut(150);
+  $( "div.home_content4" ).fadeOut(150);
+  $( "div.home_content5" ).fadeOut(150);
+  $("div.home_content3").fadeIn();
+      });
+	  
+	  	$(".home_button4").click(function(){
+  $( "div.home_content1" ).fadeOut(150);
+  $( "div.home_content2" ).fadeOut(150);
+  $( "div.home_content3" ).fadeOut(150);
+  $( "div.home_content4" ).fadeOut(150);
+  $( "div.home_content5" ).fadeOut(150);
+  $("div.home_content4").fadeIn();
+      });
+	  
+	  	$(".home_button5").click(function(){
+  $( "div.home_content1" ).fadeOut(150);
+  $( "div.home_content2" ).fadeOut(150);
+  $( "div.home_content3" ).fadeOut(150);
+  $( "div.home_content4" ).fadeOut(150);
+  $( "div.home_content5" ).fadeOut(150);
+  $("div.home_content5").fadeIn();
+      });
+	 
+  
+});
+</script> -->
+<script type="text/javascript">
+        function zoom() {
+            document.body.style.zoom = "100%" 
+        }
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <link rel="stylesheet" type="text/css" href="style/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style/screen.css">
+    <link rel="stylesheet" type="text/css" href="style/navbar.css">
+    <link rel="stylesheet" type="text/css" href="style/button.css">
+    <link rel="stylesheet" type="text/css" href="style/carousel.css">
+	<link rel="stylesheet" type="text/css" href="style/animate.css">
+    <link rel="stylesheet" type="text/css" href="style/grid-vertical.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body onload="zoom()">
+<div id="header"></div>
+<div class="home_slogan">
+    <img src="img/slogan3.jpg" width="100%">
+	<div class="home_slogan2 animated fadeInLeft slogan_padding">
+    <br>Full Medical Service<br>
+Tailored to Your Needs<br>
+    <button id="register" class="btn btn-primary btn-lg animated fadeInRight">Register</button>
+	</div>
+  </div>
+<div class="container-fluid">
+    <div class="row buttongroup buttongroup-buttons">
+        <div class="col-sm-4">
+            <button class="home_slogan_button" id="home_slogan_button1">
+                Services
+            </button>
+			 <span id="arrow-up"></span>
+        </div>
+        <div class="col-sm-4">
+            <button class="home_slogan_button" id="home_slogan_button2">
+                Specialties
+            </button>
+        </div>
+        <div class="col-sm-4">
+            <button class="home_slogan_button" id="home_slogan_button3">
+                Advantages
+            </button>
+        </div>
+    </div>
+    <div class="row buttongroup imgbuttons " id="home_slogan_list1">
+        <div class="col-sm-3">
+            <button id="consultationButton">
+               
+                <span id="consulationSpan">
+                    <img id="consultation" src="img/icons/video-chat3.png" alt="">
+                     Consultation
+                </span>
+            </button>
+        </div>
+        <div class="col-sm-3">
+            <button id="paperDiagnoseButton">
+                <span>
+                    <img id="paperDiagnose" src="img/icons/writing-letter3.png" alt="">
+                    Paper Diagnose
+                </span>
+            </button>
+        </div>
+        <div class="col-sm-3">
+            <button id="travelButton">
+                <span>
+                    <img id="travel" src="img/icons/travel3.png" alt="">
+                    U.S Treatment
+                </span>
+            </button>
+        </div>
+        <div class="col-sm-3">
+            <button id="familyButton">
+                <span>
+                    <img id="family" src="img/icons/doctor3.png" alt="">
+                    Family Doctor
+                </span>
+            </button>
+        </div>
+    </div>
+	<div class="row buttongroup imgbuttons page-invisible" id="home_slogan_list2">
+        <div class="col-sm-3">
+            <button id="consultationButton">
+                <span id="consulationSpan">
+                    <img id="consultation" src="img/icons/video-chat3.png" alt="">
+                     肿瘤
+                </span>
+            </button>
+        </div>
+		<div class="col-sm-3">
+            <button id="consultationButton">
+                
+                <span id="consulationSpan">
+                    <img id="consultation" src="img/icons/video-chat3.png" alt="">
+                    神经科
+                </span>
+            </button>
+        </div>
+        <div class="col-sm-3">
+            <button id="paperDiagnoseButton">
+                <span>
+                    <img id="paperDiagnose" src="img/icons/writing-letter3.png" alt="">
+                     儿科
+                </span>
+            </button>
+        </div>
+        <div class="col-sm-3">
+            <button id="travelButton">
+                <span>
+                    <img id="travel" src="img/icons/travel3.png" alt="">
+                   罕見病
+                </span>
+            </button>
+        </div>
+        <div class="col-sm-3">
+            <button id="familyButton">
+                <span>
+                    <img id="family" src="img/icons/doctor3.png" alt="">
+                    其他
+                </span>
+            </button>
+        </div>
+    </div>
+	<div class="row buttongroup imgbuttons page-invisible" id="home_slogan_list3">
+        <div class="col-sm-3">
+            <button id="consultationButton">
+                
+                <span id="consulationSpan">
+                    <img id="consultation" src="img/icons/video-chat3.png" alt="">
+                     公司简介
+                </span>
+            </button>
+        </div>
+        <div class="col-sm-3">
+            <button id="paperDiagnoseButton">
+                <span>
+                    <img id="paperDiagnose" src="img/icons/writing-letter3.png" alt="">
+                  创始故事
+                </span>
+            </button>
+        </div>
+        <div class="col-sm-3">
+            <button id="travelButton">
+                <span>
+                    <img id="travel" src="img/icons/travel3.png" alt="">
+                    服务亮点
+                </span>
+            </button>
+        </div>
+        <div class="col-sm-3">
+            <button id="familyButton">
+                <span>
+                    <img id="family" src="img/icons/doctor3.png" alt="">
+                    公司动态
+                </span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="container-fluid advantages home_margin" style="color:white;"><br>
+<br><br><br><br><br>
+    <center><div class="home_span_white"><h3><span>&nbsp;&nbsp;公司优势&nbsp;&nbsp;</span></h3></div></center>
+<center><table border="0" width="90%">
+<tr>
+<td width="19%"><center><div class="home_button1"><img width="100%" src="img/home/home1.png"><br><h3>丰富资源网络</h3></div></center></td>
+<td width="19%"><center><div class="home_button2"><img width="100%" src="img/home/home2.png"><br><h3>权威医生顾问</h3></div></center></td>
+<td width="19%"><center><div class="home_button3"><img width="100%" src="img/home/home3.png"><br><h3>独创服务体系</h3></div></center></td>
+<td width="19%"><center><div class="home_button4"><img width="100%" src="img/home/home4.png"><br><h3>专业贴心团队</h3></div></center></td>
+<td width="19%"><center><div class="home_button5"><img width="100%" src="img/home/home5.png"><br><h3>精英管理团队</h3></div></center></td>
+</tr>
+<tr><td colspan="5"><div class="advantages_container">
+<div class="home_content1 ">
+美约名医扎根美国本土，长期与各大权威医院及知名医生保持直接联系，拥有着广泛、丰富、专业的医疗资源，保证患者享受到国际尖端的医疗服务。<br>
+-我们的名医均来自美国排名前20的医院<br>
+-担任科室领导或获得过美国国家级或区域级知名医学奖项<br>
+-拥有至少15年的临床经验<br>
+-毕业院校：美国排名前30的医学院<br>
+</div>
+<div class="home_content2 page-invisible">美约名医拥有一支目前行业内资质最顶尖的美国名医顾问团队。每一位医生均为美约名医提供背书，患者可以放心使用我们的服务，获得优质权威的海外医疗服务！</div>
+<div class="home_content3 page-invisible">基于在美强大的名医资源，美约名医独创“名医直通车”服务体系，帮助患者直接与美国权威医生取得联系并进行预约，避免了由医院分配医生，无法精准匹配名医的情况发生。“直接对接美国名医”可以帮助患者精准匹配名医，获得高性价比的一流医疗服务。</div>
+<div class="home_content4 page-invisible">美约名医专业、贴心的医疗团队在中美医疗领域拥有丰富的经验，能够为患者精准匹配名医，并在最短时间内帮助患者预约名医，同时保证医学翻译准确无误及海外医疗服务体验。</div>
+<div class="home_content5 page-invisible">美约名医管理团队均来自哈佛、卡内基梅隆等美国名校，并有在高盛、西门子、默沙东、美国参议院、美国药管局 FDA、世界卫生组织和战略咨询公司的丰富工作经历。团队将凭借专业的医疗背景，秉承“一切以患者为中心”的工作态度，为患者提供高品质的就医体验！</div>
+
+</div></td></tr>
+</table>
+</center>
+	<br>
+	<br><br><br><br><br>
+</div> -->
+<div class="container-fluid lightBlue" style="background-color:#ececec;background-image:url(img/bg1.jpg);background-size: 100%;background-repeat: no-repeat;background-position: center; ">
+    <div class="container strike">
+        <span>Advantages</span>
+    </div>
+    <div class="container" style="margin:0 auto;">
+        <div class="row">
+            <div class="col-sm-6 col-md-7" style="padding:0px;width:48%;margin-right:20px;" >
+                <div class="advantages-img bg1" >
+                    <div class="stage ">
+					<div class="adv_1">
+                        <h2>EXPERTS</h2>
+						
+                        <p  >Etiam vel molestie mauris. Etiam eu nibh in<br>
+                            lectus mattis ultricies id id urna. mauris ultric-<br>
+                            ies tortor lacus, et congue ex maximus egetE-<br>
+                            tiam vulputate maximus hendrerit nam.</p></div>
+                    </div>
+					
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-5" style="padding:0px;width:50%;" >
+                <div class="advantages-img bg2">
+                <div class="stage ">
+				<div class="adv_1">
+                    <h2>MOST VALUABLE</h2>
+					 <p  >Etiam vel molestie mauris. Etiam eu nibh in<br>
+                            lectus mattis ultricies id id urna. mauris ultric-<br>
+                            ies tortor lacus, et congue ex maximus egetE-<br>
+                            tiam vulputate maximus hendrerit nam.</p>
+					</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 10px">
+            <div class="col-sm-6 col-md-5" style="padding:0px;width:48%;margin-right:20px;" >
+                <div class="advantages-img bg3">
+                    <div class="stage ">
+					<div class="adv_1">
+                    <h2>24/7 SERVICES</h2>
+					 <p  >Etiam vel molestie mauris. Etiam eu nibh in<br>
+                            lectus mattis ultricies id id urna. mauris ultric-<br>
+                            ies tortor lacus, et congue ex maximus egetE-<br>
+                            tiam vulputate maximus hendrerit nam.</p></div></div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-7" style="padding:0px;width:50%;" >
+                <div class="advantages-img bg4">
+                <div class="stage ">
+				<div class="adv_1">
+                    <h2>FOLLOWING UP</h2>
+					 <p  >Etiam vel molestie mauris. Etiam eu nibh in<br>
+                            lectus mattis ultricies id id urna. mauris ultric-<br>
+                            ies tortor lacus, et congue ex maximus egetE-<br>
+                            tiam vulputate maximus hendrerit nam.</p></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<br><br><br><br><br><br>
+</div>
+<div class="container-fluid lightBlue home_margin"><br><br><br><br><br><br>
+	<center><div class="home_span_black"><h3><span>&nbsp;&nbsp;Doctors&nbsp;&nbsp;</span></h3></div></center>
+    <h2>汇聚世界顶级专家 打造国际名医云平台</h2>
+ 
+<div class="container doctors">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row doctor-frame doctor_box">
+                    <div class="col-sm-6" style="padding:0px 30px 0px 0px;">
+                        <img src="img/doc1.png" alt="">
+                    </div>
+                    <div class="col-sm-6" style="padding:0px 30px 0px 0px;">
+                        <h3>Jacques Carter, MD</h3>
+						<p>
+                        专科：内科<br>
+						所属机构：<br>
+						贝斯以色列女执事医疗中心<br><br><br>
+						</p>
+                        <p>
+                            <button class="btn_schedule">预约咨询</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row doctor-frame doctor_box">
+                    <div class="col-sm-6" style="padding:0px 30px 0px 0px;">
+                        <img src="img/doc2.png" alt="">
+                    </div>
+                    <div class="col-sm-6" style="padding:0px 30px 0px 0px;">
+                        <h3>Julia Smith, MD</h3>
+                        <p>
+                        专科：肿瘤学<br>
+						所属机构：<br>
+						纽约大学兰贡医学中心<br><br><br>
+                        </p>
+						<p>
+                            <button class="btn_schedule">预约咨询</button>
+                        </p>
+                            
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 20px">
+            <div class="col-md-6">
+                <div class="row doctor-frame doctor_box">
+                    <div class="col-sm-6" style="padding:0px 30px 0px 0px;">
+                        <img src="img/doc3.png" alt="">
+                    </div>
+                    <div class="col-sm-6" style="padding:0px 0px 0px 0px;">
+                        <h3>Anthony Amato, MD</h3>
+                        <p>
+                        专科：神经病学<br>
+						所属机构：<br>
+						布莱根妇女医院 （Brigham & Women’s）（哈佛附属医院）<br><br>
+                        </p>
+                        <p>
+                            <button class="btn_schedule">预约咨询</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row doctor-frame doctor_box">
+                    <div class="col-sm-6" style="padding:0px 30px 0px 0px;">
+                        <img src="img/doc4.png" alt="">
+                    </div>
+                    <div class="col-sm-6" style="padding:0px 0px 0px 0px;">
+                        <h3>Clifford Bassett, MD</h3>
+                        <p>
+                        专科：过敏科<br>
+						所属机构：<br>
+						纽约大学兰贡医学中心（NYU Langone）<br><br>
+                        </p>
+                        <p>
+                            <button class="btn_schedule">预约咨询</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+        
+       
+		<center><a href="medical_team.php"><button class="home_doctor_button doctor_box">更多名医</button></a></center><br>
+    <br><br><br><br><br>
+</div>
+<div class="container-fluid hospitals home_margin" ><br><br><br><br><br><br>
+<div class="container strike">
+        <span>Hospitals</span>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div id="circle"></div>
+                <div class="hospital-left">
+                    <img src="img/hospital.png" alt="">
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+                <div>
+                    <h2>纽约大学朗格尼医学中心</h2>
+                    <p>该院一直是医学领域的先驱，也是卫生保健创新的领
+                        导者。他们的5个领先的临床区域是：心脏和血管、神
+                        经病学和神经Beth Israel Deaconess Medical
+                        Center 外科学、癌症、肌肉骨骼、儿童服务。该院一直是医学领域的先驱，也是卫生保健创新的领
+                        导者。他们的5个领先的临床区域是：心脏和血管、神
+                        经病学和神经Beth Israel Deaconess Medical
+                        Center 外科学、癌症、肌肉骨骼、儿童服务。</p>
+                    <button class="btn btn-default">了解更多 >></button>
+                </div>
+                <div>
+                    <div id="carousel-hospitals" class="carousel slide hospitals-carousel" data-ride="carousel"
+                         data-interval="3000">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-sm-4"><a href="#x" class="thumbnail"><img
+                                            src="img/hospital-c1.png"
+                                            alt="Docflight" class="img-responsive"></a>
+                                    </div>
+                                    <div class="col-sm-4"><a href="#x" class="thumbnail"><img
+                                            src="img/hospital-c2.png"
+                                            alt="Docflight" class="img-responsive"></a>
+                                    </div>
+                                    <div class="col-sm-4"><a href="#x" class="thumbnail"><img
+                                            src="img/hospital-c3.png"
+                                            alt="Docflight" class="img-responsive"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-4"><a href="#x" class="thumbnail"><img
+                                            src="img/hospital-c1.png"
+                                            alt="Docflight" class="img-responsive"></a>
+                                    </div>
+                                    <div class="col-sm-4"><a href="#x" class="thumbnail"><img
+                                            src="img/hospital-c2.png"
+                                            alt="Docflight" class="img-responsive"></a>
+                                    </div>
+                                    <div class="col-sm-4"><a href="#x" class="thumbnail"><img
+                                            src="img/hospital-c3.png"
+                                            alt="Docflight" class="img-responsive"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-4"><a href="#x" class="thumbnail"><img
+                                            src="img/hospital-c1.png"
+                                            alt="Docflight" class="img-responsive"></a>
+                                    </div>
+                                    <div class="col-sm-4"><a href="#x" class="thumbnail"><img
+                                            src="img/hospital-c2.png"
+                                            alt="Docflight" class="img-responsive"></a>
+                                    </div>
+                                    <div class="col-sm-4"><a href="#x" class="thumbnail"><img
+                                            src="img/hospital-c3.png"
+                                            alt="Docflight" class="img-responsive"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#carousel-hospitals" data-slide="prev"><</a>
+                        <a class="right carousel-control" href="#carousel-hospitals" data-slide="next">></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br><br><br><br>
+</div>
+
+<div class="container-fluid lightBlue home_margin" ><br><br><br><br><br><br>
+
+  <div class="container strike">
+        <span>TESTMONIES</span>
+    </div>
+  
+     <div class="container">
+        <div class="testimoniesCarousel">
+            <div id="testimoniesCarousel" class="carousel slide " data-ride="carousel" data-interval="3000">
+                <div class="row">
+
+                    <div class="col-sm-11">
+                        <div class="carousel-inner vertical" role="listbox">
+                            <div class="active item">
+                                <img src="img/testimonies-cn.png" class="img-responsive">
+                                <div class="carousel-caption">
+                                    <div class="underline"></div>
+                                    <h3>患者薛女士</h3>
+                                    <h4>天津，乳腺癌患者</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/testimonies-cn.png" class="img-responsive">
+                                <div class="carousel-caption">
+                                    <div class="underline"></div>
+                                    <h3>患者薛女士</h3>
+                                    <h4>天津，乳腺癌患者</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/testimonies-cn.png" class="img-responsive">
+                                <div class="carousel-caption">
+                                    <div class="underline"></div>
+                                    <h3>患者薛女士</h3>
+                                    <h4>天津，乳腺癌患者</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/testimonies-cn.png" class="img-responsive">
+                                <div class="carousel-caption">
+                                    <div class="underline"></div>
+                                    <h3>患者薛女士</h3>
+                                    <h4>天津，乳腺癌患者</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="testimoniesIndicator">
+                            <ol class="carousel-indicators">
+                                <li data-target="#testimoniesCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#testimoniesCarousel" data-slide-to="1"></li>
+                                <li data-target="#testimoniesCarousel" data-slide-to="2"></li>
+                                <li data-target="#testimoniesCarousel" data-slide-to="3"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid lightBlue home_margin" ><br><br><br><br><br><br>
+   <center><div class="home_span_black"><h3><span>&nbsp;&nbsp;About Us&nbsp;&nbsp;</span></h3></div></center>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-7">
+                <div>
+                    <img src="img/video.png" alt="" style="height: auto;width: 100%">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-5">
+                <p style="font-size:20px">
+                    我们的专家网络覆盖了所有科室的<br>
+                    近百名的顶级专家资源，尤其在肿瘤科<br>
+                    ，皮肤科和神经内科有着强大的资源和 <br>
+                    巨大的优势，我们拥有世界一流的医疗 <br>
+                    团队。<br>
+                </p>
+                <p style="font-size:20px">
+                   我们的医生来自哈佛大学附属医院
+                    （麻省总院、布列根妇女 (Brigham &
+                    Women) 医院、丹娜法巴 (Dana
+                    Farber) 癌症中心、贝斯以色列 (Beth
+                    Israel) 医学中心）、约翰霍普金斯医学
+                    院、纪念斯隆-凯特琳癌症中心、哥伦
+                    比亚大学医学院、纽约大学医学院、康
+                    奈尔大学医学院、匹兹堡儿童医院等顶
+                    尖医院诊所并担任各大跨国医疗医药公
+                    司的医学顾问，因此可以让中国用户也
+                    能享受全球最顶尖医生的服务。
+                  
+                </p>
+            </div>
+        </div>
+    </div><br><br><br><br><br>
+</div>
+<div class="container-fluid news home_margin" style="background-color:#fff;"><br><br><br><br><br><br>
+ <div class="container strike">
+        <span>Partners</span><br><br><br><br>
+		<center>
+		<div class="partners_row">
+		<a href="http://www.dingjk.com/m2_kbzs.jsp#m2" target="_blank"><img src="img/partners/partner1.png"></a>
+		<a href="http://www.shskin.com/" target="_blank"><img src="img/partners/partner2.png"></a>
+		<a href="https://www.microsoft.com/" target="_blank"><img src="img/partners/partner3.png"></a>
+		<a href="http://www.haiyao.com.cn/index.asp" target="_blank"><img src="img/partners/partner13.png"></a>
+	
+		</div>
+		<div class="partners_row">
+		<a href="http://www.creditshx.com/" target="_blank"><img src="img/partners/partner5.png"></a>
+		<a href="http://www.xiuzheng.com/" target="_blank"><img src="img/partners/partner6.png"></a>
+		<a href="http://www.life-infinity.com/" target="_blank"><img src="img/partners/partner7.png"></a>
+		<a href="http://www.ciming.com/" target="_blank"><img src="img/partners/partner8.png"><br></a>
+		</div>
+		<div class="partners_row">
+		<a href="http://www.cheerlandgroup.com/index.php" target="_blank"><img src="img/partners/partner9.png"></a>
+		<a href="http://www.uyixing.com/" target="_blank"><img src="img/partners/partner10.png"></a>
+		<a href="http://renhe.com/" target="_blank"><img src="img/partners/partner11.png"></a>
+		<a href="http://www.189.cn/" target="_blank"><img src="img/partners/partner12.png"></a>
+		</div>
+			<a href="https://www.ibm.com/watson/" target="_blank"><img src="img/partners/partner4.png"><br></a>
+		
+		
+		</center>
+    </div><br><br><br><br>
+	
+    <div class="container strike">
+        <span>News</span>
+    </div>
+    <div class="container">
+        <table class="table table-hover" style="font-size: 30px">
+            <tr>
+                <td>
+                    2016.11.15
+                </td>
+                <td>
+                    基于丰富的美国顶级名医资源,打破传统海外医疗公司仅限于对接医院的局限
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    2016.11.12
+                </td>
+                <td>
+                    医疗领域是一个专业性极强的领域，因此服务团队的专业性将直接
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    2016.10.18
+                </td>
+                <td>
+                    美约名医作为精品海外医疗公司,通过医疗资源零中介对接及大数据算法的真
+                    理化应用
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    2016.10.12
+                </td>
+                <td>
+                    美约名医通过大数据分析技术开发出的线上问诊平台,无需经过繁琐下载和海
+                    量检索，轻松实现用户一对一
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    2016.10.06
+                </td>
+                <td>
+                    在癌症等重大疾病以及其他无法在国内获得满意治疗的疾病
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="container strike" style="margin-top: 20px;">
+        <span>Media</span>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="medias-content"></div>
+            </div>
+            <div class="col-sm-3">
+                <div class="medias-content"></div>
+            </div>
+            <div class="col-sm-3">
+                <div class="medias-content"></div>
+            </div>
+            <div class="col-sm-3">
+                <div class="medias-content"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="medias-content"></div>
+            </div>
+            <div class="col-sm-3">
+                <div class="medias-content"></div>
+            </div>
+            <div class="col-sm-3">
+                <div class="medias-content"></div>
+            </div>
+            <div class="col-sm-3">
+                <div class="medias-content"></div>
+            </div>
+        </div>
+</div><br><br><br><br><br>
+</div>
+<div id="footer"></div>
+</body>
+</html>
