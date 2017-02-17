@@ -1125,6 +1125,7 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .bg1:hover .adv_1{
 	 height:170px;
+	 
 }
 .bg2:hover .adv_1{
 	 height:170px;
@@ -1138,7 +1139,7 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 .bg1:before{
 	background: linear-gradient(to top, rgba(69, 94, 165, 0.75) 0%, transparent 100%); 
 	height:17%;
-	width:100%;
+	width:85%;
 	content:"";
 	position: absolute;
 	 bottom: 0;  
@@ -1146,56 +1147,60 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	 
 }
 .bg1{
-	width: 100%;
+	width: 90%;
   background: url(../img/ser_1.jpg) center center no-repeat; 
+  margin: 0 auto;
 }
 .bg1:hover:before{
 	height:100%;
 }
 .bg2:before{
 	background: linear-gradient(to top, rgba(69, 94, 165, 0.75) 0%, transparent 100%); 
-	height:13%;
-	width:100%;
+	height:17%;
+	width:85%;
 	content:"";
 	position: absolute;
 	 bottom: 0;  
 	 transition:0.4s;
 }
 .bg2{
-	width: 100%;
+	width: 90%;
   background: url(../img/ser_2.jpg) center center no-repeat;
+  margin: 0 auto;
 }
 .bg2:hover:before{
 	height:100%;
 }
 .bg3:before{
 	background: linear-gradient(to top, rgba(69, 94, 165, 0.75) 0%, transparent 100%); 
-	height:13%;
-	width:100%;
+	height:17%;
+	width:85%;
 	content:"";
 	position: absolute;
 	 bottom: 0;  
 	 transition:0.4s;
 }
 .bg3{
-	width: 100%;
+	width: 90%;
   background: url(../img/ser_3.jpg) center center no-repeat;
+  margin: 0 auto;
 }
 .bg3:hover:before{
 	height:100%;
 }
 .bg4:before{
 	background: linear-gradient(to top, rgba(69, 94, 165, 0.75) 0%, transparent 100%); 
-	height:13%;
-	width:100%;
+	height:17%;
+	width:85%;
 	content:"";
 	position: absolute;
 	 bottom: 0;  
 	 transition:0.4s;
 }
 .bg4{
-	width: 100%;
+	width: 90%;
   background: url(../img/ser_4.jpg) center center no-repeat;
+  margin: 0 auto;
 }
 .bg4:hover:before{
 	height:100%;
