@@ -1122,6 +1122,7 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	 height:57px;
 	 width:100%;
 	 transition:0.4s;
+	 text-decoration: none;
 }
 .bg1:hover .adv_1{
 	 height:170px;
